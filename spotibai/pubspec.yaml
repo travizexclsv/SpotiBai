@@ -1,0 +1,32 @@
+name: spotibai
+description: SpotiBai - a Spotify-inspired music streaming UI prototype (mock data only).
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.2
+
+  # Typography (Montserrat is used as the "Circular-like" font)
+  google_fonts: ^6.2.1
+
+  # Cover art loading with caching + graceful fallback
+  cached_network_image: ^3.4.1
+
+  # Optional: real audio playback. NOT used in this prototype, because the
+  # player is faked with a Timer (see lib/providers/player_provider.dart).
+  # just_audio: ^0.9.40
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
